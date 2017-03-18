@@ -1,0 +1,113 @@
+body { 
+    font-family: Lucida Sans Unicode; margin: 0px 0px 0px 0px;
+    background-color: #dde3e8;
+}
+
+.head { font-size: 28px; color: #FFFFFF; text-align: center; background: #45a7d4;}
+
+th { color: #FFFFFF; font-size: 14px; background: #45a7d4;}
+
+td { font-size: 14px; }
+
+.tdWT { background: #fff; }
+
+.HTable { height: 50px; }
+
+.TBCenter { text-align: center; }
+
+/*enroll.html*/
+
+.HERTable { height: 40px; background: #fff;}
+
+/*timetable.html*/
+
+.TTth { font-size: 12px;}
+
+.TTTable { height: 50px; }
+
+/*gallery.html*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 200%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*Lab02*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008CBA;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #fff;
+    color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.LabHead {
+    font-size: 35px;
+    color: #444;
+}
+
+.LabImg {
+    width: 95%;
+}
