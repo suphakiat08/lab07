@@ -30,7 +30,7 @@
                     <td>&nbsp;<?php echo $row['name'];?></td>
                     <td>&nbsp;<?php echo $row['email'];?></td>
                     <td class="TBCenter"><?php echo $row['sex'];?></td>
-                    <td class="TBCenter"><?php echo $row['favorite'];?></td>
+                    <td class="TBCenter"><?php echo $row['favorite1']."<br>".$row['favorite2'];?></td>
                     <td>&nbsp;<?php echo $row['address'];?></td>
                     <td class="TBCenter"><?php echo $row['PROVINCE_NAME'];?></td>
                 </tr>
