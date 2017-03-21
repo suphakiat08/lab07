@@ -38,6 +38,11 @@
         <input type="submit" id="submit" value="Submit" name="submit">
     </form>
 
+    <a href="er.png" style="text-decoration:none;">ER Diagram</a><br>
+    <a href="https://github.com/suphakiat08/lab07/blob/master/register_form.php" style="text-decoration:none;">Source Code : register_form.php</a><br>
+    <a href="https://github.com/suphakiat08/lab07/blob/master/dopost.php" style="text-decoration:none;">Source Code : dopost.php</a><br>
+    <a href="https://github.com/suphakiat08/lab07/blob/master/show_register.php" style="text-decoration:none;">Source Code : show_register.php</a><br>
+
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
     $('#submit').on('click', function(event){
