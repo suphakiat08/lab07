@@ -10,7 +10,7 @@
 </head>
 <body>
     <h3>แบบฟอร์มลงทะเบียน</h3>
-    <form action="show_register.php" method="post" class="a" name="form1">
+    <form action="dopost.php" method="post" class="a" name="form1">
         ชื่อ-นามสกุล: <br>
         <input type="text" class="text" name="name" id="name"><br>
         อีเมล: <br>
