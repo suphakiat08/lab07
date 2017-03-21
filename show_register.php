@@ -1,21 +1,5 @@
 <?php
     include("db.php");
-
-    if(isset($_POST["submit"])){
-        if($_POST['sex'] == "M") { $sex="ชาย"; } 
-        else { $sex="หญิง"; }
-
-        if($_POST['intrL'] == "L" && $_POST['intrG'] == "") { $favorite="เรียน"; } 
-        else if($_POST['intrL'] == "" && $_POST['intrG'] == "G") { $favorite="เกมส์"; }
-        else if($_POST['intrL'] == "L" && $_POST['intrG'] == "G"){ $favorite="เรียน<br>เกมส์"; }
-
-        $sql = "INSERT INTO Lab07(name,email,sex,favorite,address,province_id) VALUES('".$_POST['name']."','".$_POST['email'].
-            "','".$sex."','".$favorite."','".$_POST['address']."',".$_POST['province'].")";
-        $conn->query($sql);
-
-        echo "<meta http-equiv=\"refresh\" content=\"0.001;URL=show_register.php\">";
-    }
-
     $query = "SELECT * FROM Lab07 INNER JOIN provinces ON Lab07.province_id=provinces.PROVINCE_ID;";
     $result = $conn->query($query);
 ?>
