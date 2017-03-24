@@ -4,11 +4,11 @@
         if($_POST['sex'] == "M") { $sex="ชาย"; } 
         else { $sex="หญิง"; }
 
-        if($_POST['intrL'] == "L" && $_POST['intrG'] == "") { $favorite1="เรียน"; } 
-        else if($_POST['intrL'] == "" && $_POST['intrG'] == "G") { $favorite1="เกมส์"; }
+        if($_POST['intrL'] == "L" && $_POST['intrG'] == "") { $favorite1="เรียน";} 
+        else if($_POST['intrL'] == "" && $_POST['intrG'] == "G") { $favorite1="เกมส์";}
         else if($_POST['intrL'] == "L" && $_POST['intrG'] == "G"){ $favorite1="เรียน";$favorite2="เกมส์"; }
 
-        $sql = "INSERT INTO Lab07(name,email,sex,favorite,address,province_id) VALUES('".$_POST['name']."','".$_POST['email'].
+        $sql = "INSERT INTO Lab07(name,email,sex,favorite1,favorite2,address,province_id) VALUES('".$_POST['name']."','".$_POST['email'].
             "','".$sex."','".$favorite1."','".$favorite2."','".$_POST['address']."',".$_POST['province'].")";
         $conn->query($sql);
     }
